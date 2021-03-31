@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		5EB07D1126138DB4006EB28E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB07D1026138DB4006EB28E /* AppDelegate.swift */; };
 		5EB07D1326138DB4006EB28E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB07D1226138DB4006EB28E /* SceneDelegate.swift */; };
-		5EB07D1526138DB4006EB28E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB07D1426138DB4006EB28E /* ViewController.swift */; };
+		5EB07D1526138DB4006EB28E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB07D1426138DB4006EB28E /* LoginViewController.swift */; };
 		5EB07D1826138DB4006EB28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB07D1626138DB4006EB28E /* Main.storyboard */; };
 		5EB07D1A26138DB5006EB28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB07D1926138DB5006EB28E /* Assets.xcassets */; };
 		5EB07D1D26138DB5006EB28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB07D1B26138DB5006EB28E /* LaunchScreen.storyboard */; };
+		5EB07D2C2613938D006EB28E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB07D2B2613938D006EB28E /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5EB07D0D26138DB4006EB28E /* LoginScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB07D1026138DB4006EB28E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EB07D1226138DB4006EB28E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5EB07D1426138DB4006EB28E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5EB07D1426138DB4006EB28E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5EB07D1726138DB4006EB28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5EB07D1926138DB5006EB28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5EB07D1C26138DB5006EB28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EB07D1E26138DB5006EB28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EB07D2B2613938D006EB28E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = ../WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				5EB07D1026138DB4006EB28E /* AppDelegate.swift */,
 				5EB07D1226138DB4006EB28E /* SceneDelegate.swift */,
-				5EB07D1426138DB4006EB28E /* ViewController.swift */,
+				5EB07D1426138DB4006EB28E /* LoginViewController.swift */,
+				5EB07D2B2613938D006EB28E /* WelcomeViewController.swift */,
 				5EB07D1626138DB4006EB28E /* Main.storyboard */,
 				5EB07D1926138DB5006EB28E /* Assets.xcassets */,
 				5EB07D1B26138DB5006EB28E /* LaunchScreen.storyboard */,
@@ -137,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EB07D1526138DB4006EB28E /* ViewController.swift in Sources */,
+				5EB07D1526138DB4006EB28E /* LoginViewController.swift in Sources */,
+				5EB07D2C2613938D006EB28E /* WelcomeViewController.swift in Sources */,
 				5EB07D1126138DB4006EB28E /* AppDelegate.swift in Sources */,
 				5EB07D1326138DB4006EB28E /* SceneDelegate.swift in Sources */,
 			);
@@ -296,7 +300,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Crossy.LoginScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Crossy.LoginScreen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

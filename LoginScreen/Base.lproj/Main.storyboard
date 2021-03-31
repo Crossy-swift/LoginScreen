@@ -1,24 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6jB-wh-y4J">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Jct-tg-xkm">
+                                <rect key="frame" x="60" y="138" width="294" height="103"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cF-Zm-CrR">
+                                        <rect key="frame" x="0.0" y="0.0" width="294" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HNO-jh-weS">
+                                        <rect key="frame" x="0.0" y="69" width="294" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9K-Jy-pDf">
+                                <rect key="frame" x="80" y="291" width="254" height="51"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                <state key="normal" title="Log In">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGl-ge-4uc"/>
+                                    <segue destination="NDp-h9-344" kind="presentation" identifier="1" modalPresentationStyle="fullScreen" id="bKL-4j-K5p"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-6g-pQU">
+                                <rect key="frame" x="20" y="382" width="374" height="33"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8y-6K-8Ct">
+                                        <rect key="frame" x="0.0" y="0.0" width="111" height="33"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                        <state key="normal" title="Forgot User Name?">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgotNameButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ipa-Ks-LTA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT7-fS-uqH">
+                                        <rect key="frame" x="271" y="0.0" width="103" height="33"/>
+                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                        <state key="normal" title="Forgot Password?">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="forgotPassButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="YLJ-rK-MM9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kIf-6g-pQU" secondAttribute="bottom" constant="50" id="2Cb-c5-ZYi"/>
+                            <constraint firstItem="h9K-Jy-pDf" firstAttribute="top" secondItem="Jct-tg-xkm" secondAttribute="bottom" constant="50" id="3Hv-zv-K8t"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jct-tg-xkm" secondAttribute="trailing" constant="60" id="BDK-2a-2d4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9K-Jy-pDf" secondAttribute="trailing" constant="80" id="Bl6-lA-yJi"/>
+                            <constraint firstItem="kIf-6g-pQU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E8u-NR-gRi"/>
+                            <constraint firstItem="Jct-tg-xkm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MXL-pc-NYQ"/>
+                            <constraint firstItem="kIf-6g-pQU" firstAttribute="top" secondItem="h9K-Jy-pDf" secondAttribute="bottom" constant="40" id="sFB-ld-MeQ"/>
+                            <constraint firstItem="h9K-Jy-pDf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="sHo-LI-fvp"/>
+                            <constraint firstAttribute="trailing" secondItem="kIf-6g-pQU" secondAttribute="trailing" constant="20" id="stf-eh-7iA"/>
+                            <constraint firstItem="Jct-tg-xkm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="v15-6Q-iaw"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="gX5-oJ-t8J"/>
+                    <connections>
+                        <outlet property="forgotNameButton" destination="A8y-6K-8Ct" id="xAL-mM-Lcw"/>
+                        <outlet property="forgotPasswordButton" destination="OT7-fS-uqH" id="WAh-Da-BXw"/>
+                        <outlet property="logInButton" destination="h9K-Jy-pDf" id="1Ch-H8-YTr"/>
+                        <outlet property="passwordTextField" destination="HNO-jh-weS" id="oSC-te-BxQ"/>
+                        <outlet property="userNameTextField" destination="8cF-Zm-CrR" id="erp-qN-oFr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="647.82608695652175" y="137.94642857142856"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="FAr-1K-66Z">
+            <objects>
+                <viewController id="NDp-h9-344" customClass="WelcomeViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MOf-4R-xMw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qyL-9H-UEC">
+                                <rect key="frame" x="50" y="144" width="314" height="47"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHp-78-74n">
+                                <rect key="frame" x="100" y="391" width="214" height="51"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                <state key="normal" title="Log Out">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q62-dP-QZr" kind="unwind" unwindAction="unwindFor:" id="KSA-Za-zwS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5p8-J9-bRo"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="NHp-78-74n" firstAttribute="top" secondItem="qyL-9H-UEC" secondAttribute="bottom" constant="200" id="7aY-G0-UaI"/>
+                            <constraint firstItem="NHp-78-74n" firstAttribute="leading" secondItem="5p8-J9-bRo" secondAttribute="leading" constant="100" id="8aW-Im-daq"/>
+                            <constraint firstItem="5p8-J9-bRo" firstAttribute="trailing" secondItem="qyL-9H-UEC" secondAttribute="trailing" constant="50" id="KK7-CR-y6Z"/>
+                            <constraint firstItem="5p8-J9-bRo" firstAttribute="trailing" secondItem="NHp-78-74n" secondAttribute="trailing" constant="100" id="Php-KZ-XWX"/>
+                            <constraint firstItem="qyL-9H-UEC" firstAttribute="top" secondItem="5p8-J9-bRo" secondAttribute="top" constant="100" id="QGm-Cl-XgZ"/>
+                            <constraint firstItem="qyL-9H-UEC" firstAttribute="leading" secondItem="5p8-J9-bRo" secondAttribute="leading" constant="50" id="kCn-Gg-LuZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="08P-A6-RfI"/>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="qyL-9H-UEC" id="IGj-df-o2W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f9C-Qs-uxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Q62-dP-QZr" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1546" y="138"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="D9n-hO-zPo">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6jB-wh-y4J" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NDs-TP-hya">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="n22-zs-ujD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3VM-d7-w2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-262.31884057971018" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
