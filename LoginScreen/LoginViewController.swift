@@ -37,8 +37,8 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func logInButtonPressed() {
-        if userNameTextField.text != "Stranger" &&
-            passwordTextField.text != "LetMeIm" {
+        if userNameTextField.text != "Stranger" ||
+            passwordTextField.text != "LetMeIn" {
             showMassage(
                 with: "Incorrect Password or User Name!",
                 message: "Please, enter your correct Password or User Name"
