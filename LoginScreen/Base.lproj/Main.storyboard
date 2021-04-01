@@ -27,12 +27,12 @@
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HNO-jh-weS">
                                         <rect key="frame" x="0.0" y="69" width="294" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9K-Jy-pDf">
-                                <rect key="frame" x="80" y="291" width="254" height="51"/>
+                                <rect key="frame" x="80" y="271" width="254" height="51"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
                                 <state key="normal" title="Log In">
@@ -40,11 +40,11 @@
                                 </state>
                                 <connections>
                                     <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGl-ge-4uc"/>
-                                    <segue destination="NDp-h9-344" kind="presentation" identifier="1" modalPresentationStyle="fullScreen" id="bKL-4j-K5p"/>
+                                    <segue destination="NDp-h9-344" kind="presentation" identifier="nextScreen" modalPresentationStyle="fullScreen" id="bKL-4j-K5p"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-6g-pQU">
-                                <rect key="frame" x="20" y="382" width="374" height="33"/>
+                                <rect key="frame" x="20" y="342" width="374" height="33"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8y-6K-8Ct">
                                         <rect key="frame" x="0.0" y="0.0" width="111" height="33"/>
@@ -73,12 +73,12 @@
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kIf-6g-pQU" secondAttribute="bottom" constant="50" id="2Cb-c5-ZYi"/>
-                            <constraint firstItem="h9K-Jy-pDf" firstAttribute="top" secondItem="Jct-tg-xkm" secondAttribute="bottom" constant="50" id="3Hv-zv-K8t"/>
+                            <constraint firstItem="h9K-Jy-pDf" firstAttribute="top" secondItem="Jct-tg-xkm" secondAttribute="bottom" constant="30" id="3Hv-zv-K8t"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jct-tg-xkm" secondAttribute="trailing" constant="60" id="BDK-2a-2d4"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9K-Jy-pDf" secondAttribute="trailing" constant="80" id="Bl6-lA-yJi"/>
                             <constraint firstItem="kIf-6g-pQU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E8u-NR-gRi"/>
                             <constraint firstItem="Jct-tg-xkm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MXL-pc-NYQ"/>
-                            <constraint firstItem="kIf-6g-pQU" firstAttribute="top" secondItem="h9K-Jy-pDf" secondAttribute="bottom" constant="40" id="sFB-ld-MeQ"/>
+                            <constraint firstItem="kIf-6g-pQU" firstAttribute="top" secondItem="h9K-Jy-pDf" secondAttribute="bottom" constant="20" id="sFB-ld-MeQ"/>
                             <constraint firstItem="h9K-Jy-pDf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="sHo-LI-fvp"/>
                             <constraint firstAttribute="trailing" secondItem="kIf-6g-pQU" secondAttribute="trailing" constant="20" id="stf-eh-7iA"/>
                             <constraint firstItem="Jct-tg-xkm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="v15-6Q-iaw"/>
@@ -86,8 +86,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="gX5-oJ-t8J"/>
                     <connections>
-                        <outlet property="forgotNameButton" destination="A8y-6K-8Ct" id="xAL-mM-Lcw"/>
-                        <outlet property="forgotPasswordButton" destination="OT7-fS-uqH" id="WAh-Da-BXw"/>
                         <outlet property="logInButton" destination="h9K-Jy-pDf" id="1Ch-H8-YTr"/>
                         <outlet property="passwordTextField" destination="HNO-jh-weS" id="oSC-te-BxQ"/>
                         <outlet property="userNameTextField" destination="8cF-Zm-CrR" id="erp-qN-oFr"/>
