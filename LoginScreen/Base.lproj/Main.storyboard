@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6jB-wh-y4J">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,42 +13,42 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="Jct-tg-xkm">
-                                <rect key="frame" x="60" y="138" width="294" height="103"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Jct-tg-xkm">
+                                <rect key="frame" x="60" y="50" width="200" height="84"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8cF-Zm-CrR">
-                                        <rect key="frame" x="0.0" y="0.0" width="294" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HNO-jh-weS">
-                                        <rect key="frame" x="0.0" y="69" width="294" height="34"/>
+                                        <rect key="frame" x="0.0" y="50" width="200" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9K-Jy-pDf">
-                                <rect key="frame" x="80" y="271" width="254" height="51"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
+                                <rect key="frame" x="80" y="164" width="160" height="44"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="25"/>
                                 <state key="normal" title="Log In">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="logInButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="xGl-ge-4uc"/>
-                                    <segue destination="NDp-h9-344" kind="presentation" identifier="nextScreen" modalPresentationStyle="fullScreen" id="bKL-4j-K5p"/>
+                                    <segue destination="Bl8-d7-eh1" kind="presentation" identifier="nextScreen" modalPresentationStyle="fullScreen" id="bKL-4j-K5p"/>
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="kIf-6g-pQU">
-                                <rect key="frame" x="20" y="342" width="374" height="33"/>
+                                <rect key="frame" x="20" y="228" width="280" height="29"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8y-6K-8Ct">
-                                        <rect key="frame" x="0.0" y="0.0" width="111" height="33"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="29"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="13"/>
                                         <state key="normal" title="Forgot User Name?">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -57,8 +57,8 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OT7-fS-uqH">
-                                        <rect key="frame" x="271" y="0.0" width="103" height="33"/>
-                                        <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="13"/>
+                                        <rect key="frame" x="186" y="0.0" width="94" height="29"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="13"/>
                                         <state key="normal" title="Forgot Password?">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -69,19 +69,19 @@
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="312-r6-i5x"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kIf-6g-pQU" secondAttribute="bottom" constant="50" id="2Cb-c5-ZYi"/>
+                            <constraint firstItem="312-r6-i5x" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kIf-6g-pQU" secondAttribute="bottom" constant="50" id="2Cb-c5-ZYi"/>
                             <constraint firstItem="h9K-Jy-pDf" firstAttribute="top" secondItem="Jct-tg-xkm" secondAttribute="bottom" constant="30" id="3Hv-zv-K8t"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jct-tg-xkm" secondAttribute="trailing" constant="60" id="BDK-2a-2d4"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="h9K-Jy-pDf" secondAttribute="trailing" constant="80" id="Bl6-lA-yJi"/>
-                            <constraint firstItem="kIf-6g-pQU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="E8u-NR-gRi"/>
-                            <constraint firstItem="Jct-tg-xkm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="MXL-pc-NYQ"/>
+                            <constraint firstItem="312-r6-i5x" firstAttribute="trailing" secondItem="Jct-tg-xkm" secondAttribute="trailing" constant="60" id="BDK-2a-2d4"/>
+                            <constraint firstItem="312-r6-i5x" firstAttribute="trailing" secondItem="h9K-Jy-pDf" secondAttribute="trailing" constant="80" id="Bl6-lA-yJi"/>
+                            <constraint firstItem="kIf-6g-pQU" firstAttribute="leading" secondItem="312-r6-i5x" secondAttribute="leading" constant="20" id="E8u-NR-gRi"/>
+                            <constraint firstItem="Jct-tg-xkm" firstAttribute="top" secondItem="312-r6-i5x" secondAttribute="top" constant="50" id="MXL-pc-NYQ"/>
                             <constraint firstItem="kIf-6g-pQU" firstAttribute="top" secondItem="h9K-Jy-pDf" secondAttribute="bottom" constant="20" id="sFB-ld-MeQ"/>
-                            <constraint firstItem="h9K-Jy-pDf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="sHo-LI-fvp"/>
-                            <constraint firstAttribute="trailing" secondItem="kIf-6g-pQU" secondAttribute="trailing" constant="20" id="stf-eh-7iA"/>
-                            <constraint firstItem="Jct-tg-xkm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="v15-6Q-iaw"/>
+                            <constraint firstItem="h9K-Jy-pDf" firstAttribute="leading" secondItem="312-r6-i5x" secondAttribute="leading" constant="80" id="sHo-LI-fvp"/>
+                            <constraint firstItem="312-r6-i5x" firstAttribute="trailing" secondItem="kIf-6g-pQU" secondAttribute="trailing" constant="20" id="stf-eh-7iA"/>
+                            <constraint firstItem="Jct-tg-xkm" firstAttribute="leading" secondItem="312-r6-i5x" secondAttribute="leading" constant="60" id="v15-6Q-iaw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="gX5-oJ-t8J"/>
@@ -93,80 +93,567 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="647.82608695652175" y="137.94642857142856"/>
+            <point key="canvasLocation" x="1644.375" y="137.32394366197184"/>
         </scene>
-        <!--Welcome View Controller-->
+        <!--Welcome-->
         <scene sceneID="FAr-1K-66Z">
             <objects>
                 <viewController id="NDp-h9-344" customClass="WelcomeViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MOf-4R-xMw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qyL-9H-UEC">
-                                <rect key="frame" x="50" y="144" width="314" height="47"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NHp-78-74n">
-                                <rect key="frame" x="100" y="391" width="214" height="51"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="25"/>
-                                <state key="normal" title="Log Out">
+                                <rect key="frame" x="100" y="448" width="120" height="31"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                <state key="normal" title="Закончить разговор">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <segue destination="Q62-dP-QZr" kind="unwind" unwindAction="unwindFor:" id="KSA-Za-zwS"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="MhZ-P2-cEN">
+                                <rect key="frame" x="44.5" y="40" width="231" height="233"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MhZ-P2-cEN" secondAttribute="height" multiplier="231:233" id="6cG-ZJ-NXp"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="231" id="PEy-8U-U61"/>
+                                    <constraint firstAttribute="height" constant="233" id="Wau-xG-9Wx"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приветствую" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="qyL-9H-UEC">
+                                <rect key="frame" x="40" y="289" width="240" height="25.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="5p8-J9-bRo"/>
+                        <viewLayoutGuide key="safeArea" id="3k9-W6-QRC"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <constraints>
-                            <constraint firstItem="NHp-78-74n" firstAttribute="top" secondItem="qyL-9H-UEC" secondAttribute="bottom" constant="200" id="7aY-G0-UaI"/>
-                            <constraint firstItem="NHp-78-74n" firstAttribute="leading" secondItem="5p8-J9-bRo" secondAttribute="leading" constant="100" id="8aW-Im-daq"/>
-                            <constraint firstItem="5p8-J9-bRo" firstAttribute="trailing" secondItem="qyL-9H-UEC" secondAttribute="trailing" constant="50" id="KK7-CR-y6Z"/>
-                            <constraint firstItem="5p8-J9-bRo" firstAttribute="trailing" secondItem="NHp-78-74n" secondAttribute="trailing" constant="100" id="Php-KZ-XWX"/>
-                            <constraint firstItem="qyL-9H-UEC" firstAttribute="top" secondItem="5p8-J9-bRo" secondAttribute="top" constant="100" id="QGm-Cl-XgZ"/>
-                            <constraint firstItem="qyL-9H-UEC" firstAttribute="leading" secondItem="5p8-J9-bRo" secondAttribute="leading" constant="50" id="kCn-Gg-LuZ"/>
+                            <constraint firstItem="NHp-78-74n" firstAttribute="leading" secondItem="3k9-W6-QRC" secondAttribute="leading" constant="100" id="8aW-Im-daq"/>
+                            <constraint firstItem="qyL-9H-UEC" firstAttribute="top" secondItem="MhZ-P2-cEN" secondAttribute="bottom" constant="16" id="O33-q1-3l5"/>
+                            <constraint firstItem="3k9-W6-QRC" firstAttribute="trailing" secondItem="NHp-78-74n" secondAttribute="trailing" constant="100" id="Php-KZ-XWX"/>
+                            <constraint firstItem="MhZ-P2-cEN" firstAttribute="leading" secondItem="3k9-W6-QRC" secondAttribute="leading" constant="44.5" id="QBo-6l-HEA"/>
+                            <constraint firstItem="3k9-W6-QRC" firstAttribute="bottom" secondItem="NHp-78-74n" secondAttribute="bottom" constant="40" id="TBm-9Z-egv"/>
+                            <constraint firstItem="3k9-W6-QRC" firstAttribute="trailing" secondItem="qyL-9H-UEC" secondAttribute="trailing" constant="40" id="tkp-4R-76o"/>
+                            <constraint firstItem="3k9-W6-QRC" firstAttribute="trailing" secondItem="MhZ-P2-cEN" secondAttribute="trailing" constant="44.5" id="tnL-F7-1dG"/>
+                            <constraint firstItem="MhZ-P2-cEN" firstAttribute="top" secondItem="3k9-W6-QRC" secondAttribute="top" constant="40" id="x23-cS-1RD"/>
+                            <constraint firstItem="qyL-9H-UEC" firstAttribute="leading" secondItem="3k9-W6-QRC" secondAttribute="leading" constant="40" id="xqF-bo-sos"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Welcome" image="exclamationmark.triangle" catalog="system" id="MMb-Ah-XoF"/>
                     <navigationItem key="navigationItem" id="08P-A6-RfI"/>
                     <connections>
+                        <outlet property="welcomeImage" destination="MhZ-P2-cEN" id="IHi-Hz-Yoh"/>
                         <outlet property="welcomeLabel" destination="qyL-9H-UEC" id="IGj-df-o2W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f9C-Qs-uxA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Q62-dP-QZr" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="138"/>
+            <point key="canvasLocation" x="1685.625" y="976.05633802816908"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="D9n-hO-zPo">
+        <!--About Me-->
+        <scene sceneID="EyU-Hb-2KG">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6jB-wh-y4J" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NDs-TP-hya">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                <viewController id="m2X-7N-abZ" customClass="AboutMeViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J3z-uI-Eap">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="jve-q1-kMC">
+                                <rect key="frame" x="20" y="20" width="280" height="434.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="mrB-6O-c7A">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNO-rk-ytM">
+                                                <rect key="frame" x="0.0" y="0.0" width="196" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L7m-iV-v5Y">
+                                                <rect key="frame" x="246" y="0.0" width="34" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EIF-vj-k3r">
+                                        <rect key="frame" x="0.0" y="37.5" width="280" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Раса:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z9y-Jd-k6p">
+                                                <rect key="frame" x="0.0" y="0.0" width="226" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYH-wJ-9h8">
+                                                <rect key="frame" x="246" y="0.0" width="34" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xy0-p0-u5s">
+                                        <rect key="frame" x="0.0" y="75" width="280" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Род деятельности:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lwi-Eb-JMX">
+                                                <rect key="frame" x="0.0" y="0.0" width="226" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lu-iJ-fF9">
+                                                <rect key="frame" x="246" y="0.0" width="34" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wus-SE-8R4">
+                                        <rect key="frame" x="0.0" y="112.5" width="280" height="21.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Возраст:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Cb-VW-h0B">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bvZ-3d-faw">
+                                                <rect key="frame" x="87" y="0.0" width="193" height="21.5"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Родом из провинции Эльсвейр:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Whm-Gb-wKt">
+                                        <rect key="frame" x="0.0" y="150" width="280" height="21.5"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unnamed" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bS8-Pk-5ql">
+                                        <rect key="frame" x="0.0" y="187.5" width="280" height="200"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="R0z-aN-7VM">
+                                        <rect key="frame" x="0.0" y="403.5" width="280" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Nd-Nx-mPd">
+                                                <rect key="frame" x="0.0" y="0.0" width="74.5" height="31"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                                <state key="normal" title="М'айк о себе">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleShadowColor" systemColor="systemGray6Color"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="pnZ-Wp-NLj" kind="presentation" id="wCL-af-0Sz"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkh-7b-TTo">
+                                                <rect key="frame" x="84.5" y="0.0" width="81.5" height="31"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                                <state key="normal" title="М'айк о отце">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="kfd-ym-mDM" kind="presentation" id="mdN-MT-JOY"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0OK-hl-r6p">
+                                                <rect key="frame" x="176" y="0.0" width="104" height="31"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                                <state key="normal" title="М'айк о волнении">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="L7y-Dy-zHS" kind="presentation" id="KdZ-6V-YyS"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="YNC-QL-BiC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jve-q1-kMC" firstAttribute="top" secondItem="YNC-QL-BiC" secondAttribute="top" constant="20" id="6IF-p4-7AK"/>
+                            <constraint firstItem="jve-q1-kMC" firstAttribute="leading" secondItem="YNC-QL-BiC" secondAttribute="leading" constant="20" id="gOD-Yl-Aj1"/>
+                            <constraint firstItem="YNC-QL-BiC" firstAttribute="trailing" secondItem="jve-q1-kMC" secondAttribute="trailing" constant="20" id="xAI-ya-wyB"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="About Me" image="puzzlepiece" catalog="system" id="TUG-S9-LFT"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="n22-zs-ujD"/>
+                        <outlet property="ageLabel" destination="bvZ-3d-faw" id="Jc0-b8-uq7"/>
+                        <outlet property="elsweyrImage" destination="bS8-Pk-5ql" id="L1j-p3-rcf"/>
+                        <outlet property="jobLabel" destination="0lu-iJ-fF9" id="Gi7-62-oWY"/>
+                        <outlet property="nameLabel" destination="L7m-iV-v5Y" id="q4u-1f-sHc"/>
+                        <outlet property="raceLabel" destination="SYH-wJ-9h8" id="6Ac-bB-NKJ"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3VM-d7-w2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aep-7E-tex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-262.31884057971018" y="137.94642857142856"/>
+            <point key="canvasLocation" x="646.875" y="1892.9577464788733"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="44z-Hf-Z9Y">
+            <objects>
+                <viewController id="pnZ-Wp-NLj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fpA-bi-5FB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="dab-P3-fHF">
+                                <rect key="frame" x="40" y="90" width="240" height="298"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="М'айк знает много, говорит мало. М,айк знает многое, чего другие не знают." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eFv-2p-Wg0">
+                                        <rect key="frame" x="4" y="0.0" width="232" height="76"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="о себе" translatesAutoresizingMaskIntoConstraints="NO" id="XMt-oh-rAR">
+                                        <rect key="frame" x="0.0" y="126" width="240" height="172"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Lpd-To-IFo"/>
+                        <color key="backgroundColor" red="0.91007447299999999" green="0.69924286069999997" blue="0.1697214903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Lpd-To-IFo" firstAttribute="trailing" secondItem="dab-P3-fHF" secondAttribute="trailing" constant="40" id="6eh-c1-NR6"/>
+                            <constraint firstItem="dab-P3-fHF" firstAttribute="top" secondItem="Lpd-To-IFo" secondAttribute="top" constant="90" id="6jc-gV-H6E"/>
+                            <constraint firstItem="dab-P3-fHF" firstAttribute="leading" secondItem="Lpd-To-IFo" secondAttribute="leading" constant="40" id="bYk-Fb-Jlw"/>
+                            <constraint firstItem="Lpd-To-IFo" firstAttribute="bottom" secondItem="dab-P3-fHF" secondAttribute="bottom" constant="160" id="lPX-du-JeM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L32-nM-8aM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="2867"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Mot-mi-ber">
+            <objects>
+                <viewController id="kfd-ym-mDM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nrf-Ds-9VA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="NKs-kH-Tz2">
+                                <rect key="frame" x="40" y="90" width="240" height="298"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отца М'айка тоже звали М'айк. И отца отца М'айка." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmE-8c-Gd6">
+                                        <rect key="frame" x="1" y="0.0" width="238" height="50.5"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="о отце" translatesAutoresizingMaskIntoConstraints="NO" id="koD-jZ-Ioo">
+                                        <rect key="frame" x="0.0" y="100.5" width="240" height="197.5"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="l3r-du-O4D"/>
+                        <color key="backgroundColor" red="0.91007447299999999" green="0.69924286069999997" blue="0.1697214903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NKs-kH-Tz2" firstAttribute="leading" secondItem="l3r-du-O4D" secondAttribute="leading" constant="40" id="JhC-8j-DMI"/>
+                            <constraint firstItem="l3r-du-O4D" firstAttribute="trailing" secondItem="NKs-kH-Tz2" secondAttribute="trailing" constant="40" id="Lu1-CY-Wi8"/>
+                            <constraint firstItem="NKs-kH-Tz2" firstAttribute="top" secondItem="l3r-du-O4D" secondAttribute="top" constant="90" id="mxC-Lw-Yhw"/>
+                            <constraint firstItem="l3r-du-O4D" firstAttribute="bottom" secondItem="NKs-kH-Tz2" secondAttribute="bottom" constant="160" id="wHY-Jt-JTb"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XWZ-VR-h81" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="2867"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qu9-zX-Lm6">
+            <objects>
+                <viewController id="L7y-Dy-zHS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aGB-n5-CQT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zl5-jP-7zu">
+                                <rect key="frame" x="40" y="90" width="240" height="358"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Норды часто носят броню из меха. Иногда это нервирует М'айка." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xbN-Uk-wYq">
+                                        <rect key="frame" x="2.5" y="0.0" width="235" height="76"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="о волнении" translatesAutoresizingMaskIntoConstraints="NO" id="BlA-V6-myJ">
+                                        <rect key="frame" x="0.0" y="86" width="240" height="272"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R5L-Sc-yVd"/>
+                        <color key="backgroundColor" red="0.91007447299999999" green="0.69924286069999997" blue="0.1697214903" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="zl5-jP-7zu" firstAttribute="leading" secondItem="R5L-Sc-yVd" secondAttribute="leading" constant="40" id="JUX-U1-axK"/>
+                            <constraint firstItem="R5L-Sc-yVd" firstAttribute="trailing" secondItem="zl5-jP-7zu" secondAttribute="trailing" constant="40" id="Nce-zi-7pm"/>
+                            <constraint firstItem="R5L-Sc-yVd" firstAttribute="bottom" secondItem="zl5-jP-7zu" secondAttribute="bottom" constant="100" id="oYh-zB-JPy"/>
+                            <constraint firstItem="zl5-jP-7zu" firstAttribute="top" secondItem="R5L-Sc-yVd" secondAttribute="top" constant="90" id="u83-WQ-Jpx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PA9-Ji-5vo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1472" y="2867"/>
+        </scene>
+        <!--Stories-->
+        <scene sceneID="DMj-p2-TFb">
+            <objects>
+                <viewController id="NUg-Gm-7NJ" customClass="StoriesViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VXK-ka-oQc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Приготовься услышать историю, Мой Дорогой Друг..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe5-fu-3f5">
+                                <rect key="frame" x="20" y="257.5" width="280" height="50.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="М'айк, расскажи мне про:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ER-0N-jSz">
+                                <rect key="frame" x="20" y="20" width="280" height="25.5"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="dcG-Xc-HHA">
+                                <rect key="frame" x="20" y="61.5" width="280" height="133"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="L5Q-en-rxu">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kzb-Bn-Fkx">
+                                                <rect key="frame" x="0.0" y="0.0" width="133" height="31"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                                <state key="normal" title="Говорящий грязекраб">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="storyButtonChangePressed:" destination="NUg-Gm-7NJ" eventType="touchUpInside" id="Zzt-3q-3nb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywq-Zm-LJ3">
+                                                <rect key="frame" x="153" y="0.0" width="127" height="31"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                                <state key="normal" title="Святилище Боэтии">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="storyButtonChangePressed:" destination="NUg-Gm-7NJ" eventType="touchUpInside" id="dKU-dM-fgm"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vHZ-Y1-Xcq">
+                                        <rect key="frame" x="0.0" y="51" width="280" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0dk-cI-qXE">
+                                                <rect key="frame" x="0.0" y="0.0" width="111" height="31"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                                <state key="normal" title="Загадка Гномов">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="storyButtonChangePressed:" destination="NUg-Gm-7NJ" eventType="touchUpInside" id="bXE-tC-DiN"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pff-fH-Oxg">
+                                                <rect key="frame" x="131" y="0.0" width="149" height="31"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                                <state key="normal" title="Императорский краб ">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="storyButtonChangePressed:" destination="NUg-Gm-7NJ" eventType="touchUpInside" id="KX8-ia-ezf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="tUh-tt-Jlf">
+                                        <rect key="frame" x="0.0" y="102" width="280" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rfr-jb-Ukd">
+                                                <rect key="frame" x="0.0" y="0.0" width="126" height="31"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                                <state key="normal" title="Как стать личем?">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="storyButtonChangePressed:" destination="NUg-Gm-7NJ" eventType="touchUpInside" id="kLk-RR-IwV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="thv-1e-Syi">
+                                                <rect key="frame" x="186" y="0.0" width="94" height="31"/>
+                                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="15"/>
+                                                <state key="normal" title="Голые Личи">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="storyButtonChangePressed:" destination="NUg-Gm-7NJ" eventType="touchUpInside" id="cO8-ew-alR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="5PG-kw-ppU">
+                                <rect key="frame" x="20" y="210.5" width="280" height="31"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Подойти к М,айку голым" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfz-dE-Vpb">
+                                        <rect key="frame" x="0.0" y="0.0" width="219" height="31"/>
+                                        <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RkW-c8-MBJ">
+                                        <rect key="frame" x="231" y="0.0" width="51" height="31"/>
+                                        <color key="onTintColor" systemColor="systemOrangeColor"/>
+                                        <connections>
+                                            <action selector="nakedSwitchSlide" destination="NUg-Gm-7NJ" eventType="valueChanged" id="bcS-Ie-f14"/>
+                                        </connections>
+                                    </switch>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qf6-I1-5vg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qf6-I1-5vg" firstAttribute="trailing" secondItem="5PG-kw-ppU" secondAttribute="trailing" constant="20" id="7Bt-00-GUT"/>
+                            <constraint firstItem="Qf6-I1-5vg" firstAttribute="trailing" secondItem="4ER-0N-jSz" secondAttribute="trailing" constant="20" id="EOU-ug-wjn"/>
+                            <constraint firstItem="4ER-0N-jSz" firstAttribute="top" secondItem="Qf6-I1-5vg" secondAttribute="top" constant="20" id="JyH-Zt-dBp"/>
+                            <constraint firstItem="5PG-kw-ppU" firstAttribute="leading" secondItem="Qf6-I1-5vg" secondAttribute="leading" constant="20" id="OH0-lG-Ljz"/>
+                            <constraint firstItem="dcG-Xc-HHA" firstAttribute="top" secondItem="4ER-0N-jSz" secondAttribute="bottom" constant="16" id="QnN-8X-ZyP"/>
+                            <constraint firstItem="dcG-Xc-HHA" firstAttribute="leading" secondItem="Qf6-I1-5vg" secondAttribute="leading" constant="20" id="Tfz-DI-V5B"/>
+                            <constraint firstItem="Qf6-I1-5vg" firstAttribute="trailing" secondItem="xe5-fu-3f5" secondAttribute="trailing" constant="20" id="VQp-es-Wob"/>
+                            <constraint firstItem="Qf6-I1-5vg" firstAttribute="trailing" secondItem="dcG-Xc-HHA" secondAttribute="trailing" constant="20" id="dK8-bN-oIU"/>
+                            <constraint firstItem="xe5-fu-3f5" firstAttribute="top" secondItem="5PG-kw-ppU" secondAttribute="bottom" constant="16" id="hXd-tV-Bgm"/>
+                            <constraint firstItem="4ER-0N-jSz" firstAttribute="leading" secondItem="Qf6-I1-5vg" secondAttribute="leading" constant="20" id="jnB-uL-wQg"/>
+                            <constraint firstItem="xe5-fu-3f5" firstAttribute="leading" secondItem="Qf6-I1-5vg" secondAttribute="leading" constant="20" id="lJH-1W-Zvj"/>
+                            <constraint firstItem="5PG-kw-ppU" firstAttribute="top" secondItem="dcG-Xc-HHA" secondAttribute="bottom" constant="16" id="uGn-jh-zry"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Stories" image="info.circle" catalog="system" id="Mta-Zk-YBq"/>
+                    <connections>
+                        <outlet property="nakedSwitch" destination="RkW-c8-MBJ" id="j1a-iF-67D"/>
+                        <outlet property="storyLabel" destination="xe5-fu-3f5" id="wlZ-7H-OQR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e5f-Y0-2YD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591.875" y="1892.9577464788733"/>
+        </scene>
+        <!--Hobbies-->
+        <scene sceneID="EuG-ZX-mgv">
+            <objects>
+                <viewController id="oha-ec-oni" customClass="HobbiesViewController" customModule="LoginScreen" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v2X-Ez-I2r">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="108" translatesAutoresizingMaskIntoConstraints="NO" id="Wsk-nI-5eI">
+                                <rect key="frame" x="20" y="40" width="280" height="419"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Zc7-zb-kN2">
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="51"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="o0N-G0-tlf"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Торговля"/>
+                                            <segment title="Воровство"/>
+                                            <segment title="Сахар"/>
+                                        </segments>
+                                        <connections>
+                                            <action selector="hobbiesSegmentChange" destination="oha-ec-oni" eventType="valueChanged" id="Y3f-pi-JMw"/>
+                                        </connections>
+                                    </segmentedControl>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aXR-DJ-eRw">
+                                        <rect key="frame" x="0.0" y="158" width="280" height="261"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="flU-et-2Cf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="flU-et-2Cf" firstAttribute="trailing" secondItem="Wsk-nI-5eI" secondAttribute="trailing" constant="20" id="9eG-VE-Pw1"/>
+                            <constraint firstItem="Wsk-nI-5eI" firstAttribute="leading" secondItem="flU-et-2Cf" secondAttribute="leading" constant="20" id="NHF-SH-8wj"/>
+                            <constraint firstItem="flU-et-2Cf" firstAttribute="bottom" secondItem="Wsk-nI-5eI" secondAttribute="bottom" constant="60" id="Og9-3e-AtS"/>
+                            <constraint firstItem="Wsk-nI-5eI" firstAttribute="top" secondItem="flU-et-2Cf" secondAttribute="top" constant="40" id="g8e-an-nXI"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies" image="gamecontroller" catalog="system" id="iCE-mV-sE2"/>
+                    <connections>
+                        <outlet property="hobbiesImage" destination="aXR-DJ-eRw" id="rcC-xW-Sme"/>
+                        <outlet property="hobbiesSegmentedControl" destination="Zc7-zb-kN2" id="UaZ-qn-vQa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOE-gv-syQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2677.5" y="1892.9577464788733"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Zhg-nG-oGC">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Bl8-d7-eh1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zLn-At-2Gc">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemOrangeColor"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="NDp-h9-344" kind="relationship" relationship="viewControllers" id="xMI-pd-fD5"/>
+                        <segue destination="m2X-7N-abZ" kind="relationship" relationship="viewControllers" id="Zui-9M-gB1"/>
+                        <segue destination="NUg-Gm-7NJ" kind="relationship" relationship="viewControllers" id="N2v-3V-7I2"/>
+                        <segue destination="oha-ec-oni" kind="relationship" relationship="viewControllers" id="Nuy-T3-cgb"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9yU-SE-FKC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="978"/>
         </scene>
     </scenes>
     <resources>
+        <image name="2" width="400" height="400"/>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
+        <image name="gamecontroller" catalog="system" width="128" height="80"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="puzzlepiece" catalog="system" width="128" height="83"/>
+        <image name="unnamed" width="190" height="200"/>
+        <image name="о волнении" width="811" height="982"/>
+        <image name="о отце" width="800" height="800"/>
+        <image name="о себе" width="604" height="406"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

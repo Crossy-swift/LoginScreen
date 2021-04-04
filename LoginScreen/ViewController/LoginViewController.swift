@@ -15,26 +15,32 @@ class LoginViewController: UIViewController {
     
     @IBOutlet var logInButton: UIButton!
     
-    private let userName = "Stranger"
-    private let password = "LetMeIn"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         userNameTextField.delegate = self
         passwordTextField.delegate = self
     
-        logInButton.layer.cornerRadius = logInButton.layer.frame.height / 5
+        logInButton.layer.cornerRadius = logInButton.layer.frame.height / 2
+        
+        view.backgroundColor = UIColor(red: 1.00, green: 0.75, blue: 0.28, alpha: 1.00)
     }
-
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let welcomeVC = segue.destination as? WelcomeViewController else { return }
-        welcomeVC.user = userName
+        if let tabBarController = segue.destination as? UITabBarController {
+            guard let viewControllers = tabBarController.viewControllers else { return }
+            for viewController in viewControllers {
+                if let welcomeVC = viewController as? WelcomeViewController {
+                    welcomeVC.name = user.name
+                }
+            }
+        }
     }
     
     @IBAction func logInButtonPressed() {
-        if userNameTextField.text != userName ||
-            passwordTextField.text != password {
+        if userNameTextField.text != user.userName ||
+            passwordTextField.text != user.password
+        {
             showMassage(
                 with: "Incorrect Password or User Name!",
                 message: "Please, enter your correct Password or User Name"
@@ -48,7 +54,7 @@ class LoginViewController: UIViewController {
     @IBAction func forgotNameButtonPressed() {
         showMassage(
             with: "Forgot Name?",
-            message: "Your correct User Name: \(userName)"
+            message: "Your correct User Name: \(user.userName)"
         )
     }
     
@@ -56,7 +62,7 @@ class LoginViewController: UIViewController {
     @IBAction func forgotPassButtonPressed() {
         showMassage(
             with: "Forgot Password?",
-            message: "Your correct Password: \(password)"
+            message: "Your correct Password: \(user.password)"
         )
     }
     
